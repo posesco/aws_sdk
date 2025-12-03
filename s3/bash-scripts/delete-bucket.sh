@@ -7,4 +7,5 @@ if [ $# -eq 0 ]; then
 fi
 
 BUCKET_NAME=$1
-aws s3api delete-bucket --bucket $BUCKET_NAME 
+aws s3api delete-bucket \
+--bucket $BUCKET_NAME 

@@ -7,4 +7,5 @@ if [ $# -eq 0 ]; then
 fi
 BUCKET_NAME=$1
 
-aws s3 ls "s3://$BUCKET_NAME/ramdom_files/" --recursive --summarize
+aws s3 ls \
+"s3://$BUCKET_NAME/ramdom_files/" --recursive --summarize

@@ -20,4 +20,6 @@ done
 
 
 echo "Uploading files to S3 bucket $BUCKET_NAME..."
-aws s3 sync "$output_dir/" "s3://$BUCKET_NAME/ramdom_files/" 
+aws s3 sync \
+"$output_dir/" "s3://$BUCKET_NAME/ramdom_files/"
+echo "Sync completed."
